@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veritas-tee"
+version = "0.1.0"
+description = "Confidential AI Agent Enclave & Cryptographically Verifiable Execution Attestation (AMD SEV-SNP / NVIDIA H100 TEE)."
+readme = "README.md"
+authors = [
+  { name = "Ahmed Hassan", email = "ahmed@a2zsoc.com" }
+]
+license = { text = "Apache-2.0" }
+keywords = [
+  "confidential-computing",
+  "trusted-execution-environment",
+  "tee",
+  "amd-sev-snp",
+  "intel-tdx",
+  "nvidia-confidential-computing",
+  "verifiable-ai",
+  "remote-attestation",
+  "pcr-registers",
+  "zk-inference",
+  "confidential-agents",
+  "mcp-enclave-security"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security :: Cryptography"
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+veritas-tee = "veritas_tee.cli:main"
